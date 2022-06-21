@@ -1,0 +1,386 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Main = Instance.new("ScreenGui")
+local Main_2 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TheTabs = Instance.new("Frame")
+local PlayerName = Instance.new("TextLabel")
+local PlayerImage = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Settings = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
+local Scripts = Instance.new("ScrollingFrame")
+local DarkHub = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local DomainX = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Fates = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Mm2 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Bedwars = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local PetSimulatorX = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Telekenisis = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local FPS = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.CoreGui
+Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main_2.Name = "Main"
+Main_2.Parent = Main
+Main_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Main_2.Position = UDim2.new(0.999333978, 0, 0.19007872, 0)
+Main_2.Size = UDim2.new(0, 638, 0, 392)
+Main_2.Active = true
+Main_2.Draggable = true
+
+UICorner.Parent = Main_2
+
+TheTabs.Name = "The Tabs"
+TheTabs.Parent = Main_2
+TheTabs.BackgroundColor3 = Color3.fromRGB(141, 101, 184)
+TheTabs.BorderSizePixel = 0
+TheTabs.Position = UDim2.new(0.0203761756, 0, 0.10204082, 0)
+TheTabs.Size = UDim2.new(0, 613, 0, 339)
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = TheTabs
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.Position = UDim2.new(0.0962479636, 0, 0.0206489675, 0)
+PlayerName.Size = UDim2.new(0, 200, 0, 42)
+PlayerName.Font = Enum.Font.Fantasy
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = TheTabs
+PlayerImage.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PlayerImage.Position = UDim2.new(0.0146818925, 0, 0.0206489675, 0)
+PlayerImage.Size = UDim2.new(0, 50, 0, 42)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_2.Parent = PlayerImage
+
+Settings.Name = "Settings"
+Settings.Parent = TheTabs
+Settings.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Settings.Position = UDim2.new(0.926590562, 0, 0.0265486725, 0)
+Settings.Size = UDim2.new(0, 36, 0, 37)
+Settings.Image = "http://www.roblox.com/asset/?id=5107139351"
+
+UICorner_3.Parent = Settings
+
+Scripts.Name = "Scripts"
+Scripts.Parent = TheTabs
+Scripts.Active = true
+Scripts.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Scripts.BackgroundTransparency = 1.000
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0, 0, 0.168141589, 0)
+Scripts.Size = UDim2.new(0, 613, 0, 282)
+
+DarkHub.Name = "DarkHub"
+DarkHub.Parent = Scripts
+DarkHub.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DarkHub.Position = UDim2.new(0.0244698208, 0, 0.00712357834, 0)
+DarkHub.Size = UDim2.new(0, 140, 0, 50)
+DarkHub.Font = Enum.Font.Sarpanch
+DarkHub.Text = "DarkHub"
+DarkHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkHub.TextScaled = true
+DarkHub.TextSize = 14.000
+DarkHub.TextWrapped = true
+
+UICorner_4.Parent = DarkHub
+
+DomainX.Name = "DomainX"
+DomainX.Parent = Scripts
+DomainX.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DomainX.Position = UDim2.new(0.323001623, 0, 0.00712357834, 0)
+DomainX.Size = UDim2.new(0, 140, 0, 50)
+DomainX.Font = Enum.Font.Sarpanch
+DomainX.Text = "Domain"
+DomainX.TextColor3 = Color3.fromRGB(255, 255, 255)
+DomainX.TextScaled = true
+DomainX.TextSize = 14.000
+DomainX.TextWrapped = true
+
+UICorner_5.Parent = DomainX
+
+Fates.Name = "Fates"
+Fates.Parent = Scripts
+Fates.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Fates.Position = UDim2.new(0.619902134, 0, 0.00712357834, 0)
+Fates.Size = UDim2.new(0, 140, 0, 50)
+Fates.Font = Enum.Font.Sarpanch
+Fates.Text = "Fates"
+Fates.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fates.TextScaled = true
+Fates.TextSize = 14.000
+Fates.TextWrapped = true
+
+UICorner_6.Parent = Fates
+
+Mm2.Name = "Mm2"
+Mm2.Parent = Scripts
+Mm2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Mm2.Position = UDim2.new(0.0244698524, 0, 0.138392016, 0)
+Mm2.Size = UDim2.new(0, 140, 0, 50)
+Mm2.Font = Enum.Font.Sarpanch
+Mm2.Text = "Mm2"
+Mm2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mm2.TextScaled = true
+Mm2.TextSize = 14.000
+Mm2.TextWrapped = true
+
+UICorner_7.Parent = Mm2
+
+Bedwars.Name = "Bedwars"
+Bedwars.Parent = Scripts
+Bedwars.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Bedwars.Position = UDim2.new(0.323001653, 0, 0.138392016, 0)
+Bedwars.Size = UDim2.new(0, 140, 0, 50)
+Bedwars.Font = Enum.Font.Sarpanch
+Bedwars.Text = "BedWars"
+Bedwars.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bedwars.TextScaled = true
+Bedwars.TextSize = 14.000
+Bedwars.TextWrapped = true
+
+UICorner_8.Parent = Bedwars
+
+PetSimulatorX.Name = "PetSimulatorX"
+PetSimulatorX.Parent = Scripts
+PetSimulatorX.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+PetSimulatorX.Position = UDim2.new(0.619902134, 0, 0.138392016, 0)
+PetSimulatorX.Size = UDim2.new(0, 140, 0, 50)
+PetSimulatorX.Font = Enum.Font.Sarpanch
+PetSimulatorX.Text = "PetSimulatorX"
+PetSimulatorX.TextColor3 = Color3.fromRGB(255, 255, 255)
+PetSimulatorX.TextScaled = true
+PetSimulatorX.TextSize = 14.000
+PetSimulatorX.TextWrapped = true
+
+UICorner_9.Parent = PetSimulatorX
+
+Telekenisis.Name = "Telekenisis"
+Telekenisis.Parent = Scripts
+Telekenisis.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Telekenisis.Position = UDim2.new(0.0244698524, 0, 0.274085224, 0)
+Telekenisis.Size = UDim2.new(0, 140, 0, 50)
+Telekenisis.Font = Enum.Font.Sarpanch
+Telekenisis.Text = "Telekenisis"
+Telekenisis.TextColor3 = Color3.fromRGB(255, 255, 255)
+Telekenisis.TextScaled = true
+Telekenisis.TextSize = 14.000
+Telekenisis.TextWrapped = true
+
+UICorner_10.Parent = Telekenisis
+
+title.Name = "title"
+title.Parent = Main_2
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Size = UDim2.new(0, 638, 0, 40)
+title.Font = Enum.Font.Sarpanch
+title.Text = "Scrapers Hub"
+title.TextColor3 = Color3.fromRGB(255, 0, 4)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+FPS.Name = "FPS"
+FPS.Parent = Main_2
+FPS.AnchorPoint = Vector2.new(0.5, 0.5)
+FPS.BackgroundColor3 = Color3.fromRGB(0, 255, 102)
+FPS.BackgroundTransparency = 1.000
+FPS.Position = UDim2.new(0.124298528, 0, 0.0408163257, 0)
+FPS.Size = UDim2.new(0.208179966, 0, 0.0816326663, 0)
+FPS.ZIndex = 6
+FPS.Font = Enum.Font.FredokaOne
+FPS.Text = "60 FPS"
+FPS.TextColor3 = Color3.fromRGB(209, 255, 0)
+FPS.TextScaled = true
+FPS.TextSize = 14.000
+FPS.TextStrokeColor3 = Color3.fromRGB(46, 46, 46)
+FPS.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Main_2
+Close.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Close.Position = UDim2.new(0.91536051, 0, 0.00765300263, 0)
+Close.Size = UDim2.new(0, 33, 0, 33)
+Close.Font = Enum.Font.Sarpanch
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_11.Parent = Close
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+TextButton.Position = UDim2.new(0.0308641978, 0, 0.899212599, 0)
+TextButton.Size = UDim2.new(0, 141, 0, 50)
+TextButton.Font = Enum.Font.Oswald
+TextButton.Text = "Open"
+TextButton.TextColor3 = Color3.fromRGB(3, 255, 87)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_12.Parent = TextButton
+
+-- Scripts:
+
+local function FMGNSJW_fake_script() -- TheTabs.LocalScript 
+	local script = Instance.new('LocalScript', TheTabs)
+
+	local frame = script.Parent
+	
+	
+	
+	local player = game.Players.LocalPlayer
+	
+	
+	
+	local userId = player.UserId
+	
+	local thumbType = Enum.ThumbnailType.AvatarBust
+	
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	local content, isReady = game.Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	
+	
+	frame.PlayerImage.Image = content
+	
+	frame.PlayerName.Text = player.Name
+end
+coroutine.wrap(FMGNSJW_fake_script)()
+local function TERZ_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	function PlaySound( )
+		script.Parent.Parent.Sound1: Play( )
+	end
+	script.Parent.MouseButton1Click:connect (PlaySound)
+end
+coroutine.wrap(TERZ_fake_script)()
+local function AHSODOW_fake_script() -- DarkHub.Activate 
+	local script = Instance.new('LocalScript', DarkHub)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(AHSODOW_fake_script)()
+local function AUYZJE_fake_script() -- DomainX.Activate 
+	local script = Instance.new('LocalScript', DomainX)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet(('https://shlex.dev/release/domainx/latest.lua'),true))()
+	end)
+end
+coroutine.wrap(AUYZJE_fake_script)()
+local function YKLC_fake_script() -- Fates.Activate 
+	local script = Instance.new('LocalScript', Fates)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+	end)
+end
+coroutine.wrap(YKLC_fake_script)()
+local function GSLXJ_fake_script() -- Mm2.Activate 
+	local script = Instance.new('LocalScript', Mm2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+	end)
+end
+coroutine.wrap(GSLXJ_fake_script)()
+local function HJEKZUY_fake_script() -- Bedwars.Activate 
+	local script = Instance.new('LocalScript', Bedwars)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+	end)
+end
+coroutine.wrap(HJEKZUY_fake_script)()
+local function UAUUFOF_fake_script() -- PetSimulatorX.Activate 
+	local script = Instance.new('LocalScript', PetSimulatorX)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
+	end)
+end
+coroutine.wrap(UAUUFOF_fake_script)()
+local function NZOPUE_fake_script() -- Telekenisis.Activate 
+	local script = Instance.new('LocalScript', Telekenisis)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxExploiter1234/Telekinisis/main/Tele"), true))()
+	end)
+end
+coroutine.wrap(NZOPUE_fake_script)()
+local function WOZB_fake_script() -- FPS.FPSCounterScript 
+	local script = Instance.new('LocalScript', FPS)
+
+	Script by NeptuneXSL!
+	local fps = 0
+	local rs = game:GetService'RunService'
+	
+	function updateFPS()
+		fps = fps + 1
+	end
+	
+	rs.RenderStepped:connect(updateFPS)
+	
+	while wait'1' do
+		script.Parent.Text = fps .." FPS"
+		fps = 0
+	end
+end
+coroutine.wrap(WOZB_fake_script)()
+local function SEAKZN_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	function click()
+		script.Disabled = true
+		script.Parent.Parent.Main.Visible = true
+		script.Parent.Parent.Main:TweenPosition(
+			
+			UDim2.new(0.449, 0,0.362, 0),
+			"InOut",
+			"Quad",
+			1,
+			false
+			
+		)
+		wait(1)
+		script.Disabled = false
+	end
+	script.Parent.MouseButton1Click:Connect(click)
+end
+coroutine.wrap(SEAKZN_fake_script)()
